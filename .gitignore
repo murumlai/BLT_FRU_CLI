@@ -1,0 +1,40 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio editor files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Copilot snapshots
+CopilotSnapshots/
+
+# NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Class diagram files
+*.cd
+
+# Log and coverage files
+*.log
+*.coverage
+*.coveragexml
+
+# ReSharper
+.idea/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# OS artifacts
+Thumbs.db
+Desktop.ini
+.DS_Store
