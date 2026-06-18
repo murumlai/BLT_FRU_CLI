@@ -241,3 +241,45 @@ Completed:
 Remaining:
 
 - Full hardware/runtime validation with real `*_BLT.ini`, `ITUFFTemplate.xml`, `binlist.xml`, and MCP2210 device.
+
+---
+
+## Session Update — 2026-06-18 (Git + README)
+
+### 7. Git repository initialized and pushed to GitHub
+
+- Initialized a new git repository at the workspace root:
+  `C:\Users\lloganat\source\repos\BltCli`
+- Created `.gitignore` excluding `bin/`, `obj/`, `.vs/`, `CopilotSnapshots/`, `*.user`
+- Staged and committed all source files, project files, and `lib/` dependencies
+- Added remote origin: `https://github.com/murumlai/BLT_FRU_CLI.git`
+- Renamed default branch to `main`
+- Pushed initial commit to remote
+
+### 8. README.md created and pushed
+
+- Created `README.md` at the repo root covering:
+  - Hardware and runtime file requirements
+  - `readblt` / `writeblt` usage and step-by-step behavior
+  - Exit code table
+  - INI file format with example
+  - BLT EEPROM field layout table (offsets, sizes)
+  - Project structure with per-file role descriptions
+  - Build instructions (Visual Studio and MSBuild CLI)
+  - Runtime packaging checklist
+  - Relationship to the `20vNG` parent project
+- Committed and pushed (`3b81f0c`)
+- User updated BLT description and hardware requirement text
+- Updated README committed and pushed (`2bcc175`)
+
+### Git Log (current state)
+
+```
+2bcc175  docs: update BLT description and hardware requirement in README
+3b81f0c  docs: add README.md
+86a4450  Initial commit: standalone BLT CLI (.NET Framework 4.7.2)
+```
+
+### Remote
+
+`https://github.com/murumlai/BLT_FRU_CLI` — branch `main`
