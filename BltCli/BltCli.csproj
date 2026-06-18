@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2BFE423-FD5C-4ED1-88C7-3B2E06D46CC0}</ProjectGuid>
+    <ProjectGuid>{9CC9A3C2-DCA8-C92D-6020-2B35B35F6A2C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>BltCli</RootNamespace>
     <AssemblyName>BltCli</AssemblyName>
@@ -22,7 +22,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  <Prefer32Bit>true</Prefer32Bit></PropertyGroup>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
@@ -31,14 +32,33 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  <Prefer32Bit>true</Prefer32Bit></PropertyGroup>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BLT"><HintPath>lib\BLT.dll</HintPath><Private>True</Private></Reference>
-    <Reference Include="HidSharp"><HintPath>lib\HidSharp.dll</HintPath><Private>True</Private></Reference>
-    <Reference Include="itufflogger"><HintPath>lib\itufflogger.exe</HintPath><Private>True</Private></Reference>
-    <Reference Include="Log"><HintPath>lib\Log.exe</HintPath><Private>True</Private></Reference>
-    <Reference Include="MCP2210"><HintPath>lib\MCP2210.dll</HintPath><Private>True</Private></Reference>
-    <Reference Include="MCP2210DLL-M-dotNet4"><HintPath>lib\MCP2210DLL-M-dotNet4.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="BLT">
+      <HintPath>lib\BLT.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HidSharp">
+      <HintPath>lib\HidSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itufflogger">
+      <HintPath>lib\itufflogger.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Log">
+      <HintPath>lib\Log.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCP2210">
+      <HintPath>lib\MCP2210.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MCP2210DLL-M-dotNet4">
+      <HintPath>lib\MCP2210DLL-M-dotNet4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
@@ -61,5 +81,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup><Content Include="lib\msvcp100.dll"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><TargetPath>msvcp100.dll</TargetPath></Content><Content Include="lib\msvcr100.dll"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><TargetPath>msvcr100.dll</TargetPath></Content></ItemGroup><Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="lib\msvcp100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>msvcp100.dll</TargetPath>
+    </Content>
+    <Content Include="lib\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>msvcr100.dll</TargetPath>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
