@@ -1,6 +1,6 @@
 # BLT FRU CLI
 
-A standalone .NET Framework 4.7.2 console application for reading and writing BLT (Board Life Tracking) data to an MCP2210-connected EEPROM on the NG 20V PDB1 board.
+A standalone .NET Framework 4.7.2 console application for reading and writing BLT (Board Level Traceability) data to an MCP2210-connected EEPROM on the AIC/boards.
 
 This CLI is a self-contained extraction of the `readblt` and `writeblt` operations from the parent `20vNG` project. The logic is intentionally duplicated so that future BLT format or CRC changes can be applied independently.
 
@@ -10,7 +10,7 @@ This CLI is a self-contained extraction of the `readblt` and `writeblt` operatio
 
 ### Hardware
 - MCP2210 USB-to-SPI bridge connected and powered
-- NG 20V PDB1 board with accessible EEPROM
+- Board with accessible EEPROM
 
 ### Runtime Files (current working directory)
 Before running either command, the directory you invoke `BltCli.exe` from must contain:
